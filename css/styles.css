@@ -3,6 +3,6 @@ label, input {
     display: block;
 }
 
-input[type="radio"] {
+input[type="radio"], input[type="checkbox"] {
     display: initial;
 }
