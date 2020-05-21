@@ -8,5 +8,49 @@
 </head>
 <body>
 
+<form action="#" method="post">
+    <fieldset>
+        <legend>Personal data:</legend>
+        <label>User first name:
+            <input name="firstName" type="text" required placeholder="name" pattern="[A-Z][a-z]{1,64}">
+        </label>
+
+        <label>User last name:
+            <input name="lastName" type="text" required placeholder="surname" pattern="[A-Z][a-z]{1,64}">
+        </label>
+
+        <label for="userEmail">Email: </label>
+        <input name="email" id="userEmail" type="email" required autofocus placeholder="email">
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <label>
+            <input type="radio" value="male" name="isMale">
+            <span>Male</span>
+        </label>
+        <label>
+            <input type="radio" value="female" name="isMale">
+            <span>Female</span>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Password</legend>
+        <label for="userPassword">Passwords: </label>
+        <input name="password" id="userPassword" type="password" required placeholder="password"
+               pattern="(?=.*[A-Z])(?=.*\d)^\w{8,64}$">
+
+        <label>Confirm passwords:
+            <input oninput="" name="confirmPassword" type="password" required placeholder="confirm password">
+        </label>
+    </fieldset>
+
+    <button type="submit">Sign Up</button>
+    <!--    <input type="submit" value="Login">-->
+</form>
+
 </body>
 </html>
